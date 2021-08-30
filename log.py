@@ -17,7 +17,7 @@ class Log:
         self.logLevelList = [
             "DEBUG", "INFO", "WARNING", "ERROR", "FATAL"
         ]
-        self.log_setting = json.load(open("./backend/data/json/log_setting.json", "r", encoding="utf-8"))
+        self.log_setting = json.load(open("./data/json/log_setting.json", "r", encoding="utf-8"))
 
     def get_log_file_path(self):
 

@@ -9,7 +9,7 @@ import urllib.parse
 import threading
 import time
 
-from player import XiaolanPlayer
+from player import Player
 
 
 class BaiduTts():
@@ -19,7 +19,7 @@ class BaiduTts():
         self.log = log
         self.setting = setting
         self.read_chunk = setting["playerSettings"]["readChunk"]
-        self.player = XiaolanPlayer(log, setting)
+        self.player = Player(log, setting)
         self.token = ""
 
         self.app_key = setting["apiSettings"]["tts"]["appKey"]

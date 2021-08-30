@@ -18,7 +18,7 @@ class Encryption:
 
         self.md5_ = hashlib.md5()
         self.sha1_ = hashlib.sha1()
-        self.hmca_ = hmac.new(bytes("a"))
+        # self.hmca_ = hmac.new(bytes("a"))
 
     def md5(self, string):
 
